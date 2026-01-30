@@ -22,7 +22,7 @@ To write a program to predict the profit of a city using the linear regression m
 /*
 Program to implement the linear regression using gradient descent.
 Developed by: Jerrin Jose J
-RegisterNumber:  25010805
+RegisterNumber:  212225040152
 */
 ```
 ~~~
@@ -30,16 +30,16 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("ex3.csv")
+data = pd.read_csv("C:/Users/acer/Downloads/50_Startups.csv")
 
 x = data["R&D Spend"].values
 y = data["Profit"].values
 
 x = (x - np.mean(x)) / np.std(x)
 
-w = 0.0          # weight
-b = 0.0          # bias
-alpha = 0.01     # learning rate
+w = 0.0         
+b = 0.0          
+alpha = 0.01    
 epochs = 100
 n = len(x)
 
